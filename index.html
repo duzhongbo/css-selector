@@ -38,7 +38,7 @@ body{
 .a1:hover{
 	color: #f00;
 }
-/*7、临近选择器，兼容ie6*/
+/*7、临近选择器（距离最近的第一个兄弟元素），兼容ie6*/
 .box3,.box4,.box5{
 	border: 1px #f00 solid;
 }
@@ -53,6 +53,11 @@ body{
 .ul1>li{
 	border: 1px #f00 solid;
 }
+/*8、临近选择器(所有兄弟元素)，兼容ie7+*/
+.s~.s{
+    color: #f00;
+}
+
 
 </style>
 
@@ -82,6 +87,12 @@ body{
 	<li>text2</li>
 	<li>text3</li>
 </ul>
+
+
+<span class="s">test0</span>
+<span class="s">test1</span>
+<span class="s">test2</span>
+
 
 </body>
 </html>
