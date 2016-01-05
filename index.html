@@ -17,17 +17,26 @@ body{
 .box1{
 	width: 100px;
 	height: 100px;
-	background: #000;
+	border: 1px #0f0 solid;
 }
 /*3、id选择器*/
 #box1{
 	border-radius: 10px;
 	margin: 10px auto;
 }
-
+/*4、*选择器*/
+.box1 *{
+	border: 1px #f00 solid;
+	width: 80%;
+	height: 80%;
+}
 </style>
 
-<div class="box1" id="box1"></div>
+<div class="box1" id="box1">
+	<div>
+		<div></div>
+	</div>
+</div>
 
 <p></p>
 
