@@ -57,7 +57,10 @@ body{
 .s~.s{
     color: #f00;
 }
-
+/*9、属性选择器，兼容ie7+*/
+div[title='123']{
+	font-weight: bold;
+}
 
 </style>
 
@@ -93,6 +96,9 @@ body{
 <span class="s">test1</span>
 <span class="s">test2</span>
 
+
+<div title="123">123</div>
+<div title="234">234</div>
 
 </body>
 </html>
