@@ -38,6 +38,14 @@ body{
 .a1:hover{
 	color: #f00;
 }
+/*7、临近选择器，兼容ie6*/
+.box3,.box4,.box5{
+	border: 1px #f00 solid;
+}
+.box3+.box4{
+	border: 1px #00f solid;
+}
+
 </style>
 
 <div class="box1" id="box1">
@@ -49,6 +57,11 @@ body{
 </div>
 
 <a href="###" herf="" class="a1">test</a>
+
+<div class="box3">2</div>
+<div class="box4">1</div>
+<div class="box5">3</div>
+
 
 </body>
 </html>
