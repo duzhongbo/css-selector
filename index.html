@@ -45,6 +45,14 @@ body{
 .box3+.box4{
 	border: 1px #00f solid;
 }
+/*8、子选择器（直接子元素，不含间接子元素），兼容ie6*/
+.ul1 li{
+	margin-bottom: 5px;
+	border: 1px #000 solid;
+}
+.ul1>li{
+	border: 1px #f00 solid;
+}
 
 </style>
 
@@ -62,6 +70,18 @@ body{
 <div class="box4">1</div>
 <div class="box5">3</div>
 
+<br>
+
+<ul class="ul1">
+	<li>
+		<ul>
+			<li>文案1</li>
+			<li>文案2</li>
+		</ul>
+	</li>
+	<li>text2</li>
+	<li>text3</li>
+</ul>
 
 </body>
 </html>
