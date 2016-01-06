@@ -43,7 +43,10 @@ p::first-line{
 li:nth-child(2n){
 	font-weight: bold;
 }
-
+/*nth-last-child(n),用于选取 stack 中的某一个元素，从后往前，兼容ie9+*/
+li:nth-last-child(1){
+	color: #f00;font-size:30px;
+}
 </style>
 
 <p data-info="external image">123</p>
