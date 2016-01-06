@@ -61,7 +61,10 @@ body{
 div[title='123']{
 	font-weight: bold;
 }
-
+/*10、属性选择器模糊匹配，兼容ie7+*/
+div[title*='abc']{
+	color: #f00;
+}
 </style>
 
 <div class="box1" id="box1">
@@ -99,6 +102,10 @@ div[title='123']{
 
 <div title="123">123</div>
 <div title="234">234</div>
+
+<div title="12abc23">text</div>
+<div title="12ab1c23">text2</div>
+<div title="12ab1c2abc3">text3</div>
 
 </body>
 </html>
