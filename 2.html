@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css各种选择器</title>
+</head>
+<body>
+	
+<style type="text/css">
+/*属性选择器，从一个属性包含的多个值中命中一个目标值就匹配，兼容ie7+*/
+p[data-info~="external"]{
+	color: #f00;
+	font-weight: bold;
+}
+
+
+
+</style>
+
+<p data-info="external image">123</p>
+<p data-info="image">test123</p>
+
+
+</body>
+</html>
