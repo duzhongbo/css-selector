@@ -51,6 +51,10 @@ li:nth-last-child(1){
 p:nth-of-type(5){
 	border: 1px #f00 solid;
 }
+/*选取父层内第一个元素兼容, IE7+*/
+ul li:first-child {
+  color: #f00;
+}
 </style>
 
 <p data-info="external image">123</p>
