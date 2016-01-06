@@ -70,8 +70,10 @@ a[href^="http"]{
 	color: #0f0;
 	font-weight: bold;
 }
-
-
+/*12、属性选择器，结尾匹配，兼容ie7+*/
+a[href$='.jpg']{
+	border: 1px #0f0 solid;
+}
 
 
 </style>
@@ -121,6 +123,8 @@ a[href^="http"]{
 <a href="http:www.baidu.com">test11</a>
 <a href="index.html">test22</a>
 
+
+<a href="1.jpg">test111</a>
 
 </body>
 </html>
