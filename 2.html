@@ -7,12 +7,12 @@
 <body>
 	
 <style type="text/css">
-/*属性选择器，从一个属性包含的多个值中命中一个目标值就匹配，兼容ie7+*/
+/*1、属性选择器，从一个属性包含的多个值中命中一个目标值就匹配，兼容ie7+*/
 p[data-info~="external"]{
 	color: #f00;
 	font-weight: bold;
 }
-/*加绒ie9*/
+/*2、兼容ie9*/
 input[type=radio]:checked{
 	border: 1px #f00 solid;
 }
@@ -22,36 +22,36 @@ a:hover{
 	border-bottom: 1px #000 solid;
 	/*text-decoration: underline;*/
 }
-/*属性选择器，命中所有非指定属性的元素，兼容ie9*/
+/*3、属性选择器，命中所有非指定属性的元素，兼容ie9*/
 div:not(#test){
 	color: #0f0;
 }
 div:not(.test2){
 	font-weight: bold;
 }
-/*选择快元素的首字母，兼容 IE6+*/
+/*4、选择快元素的首字母，兼容 IE6+*/
 p:first-letter{
 	font-size: 20px;
 	font-weight: bold;
 }
 p{width: 40px;}
-/*选取块元素第一行，兼容ie6+*/
+/*5、选取块元素第一行，兼容ie6+*/
 p::first-line{
 	color: #0f0;
 }
-/*nth-child(n) 用于选取 stack 中的某一个元素，兼容ie9+*/
+/*6、nth-child(n) 用于选取 stack 中的某一个元素，兼容ie9+*/
 li:nth-child(2n){
 	font-weight: bold;
 }
-/*nth-last-child(n),用于选取 stack 中的某一个元素，从后往前，兼容ie9+*/
+/*7、nth-last-child(n),用于选取 stack 中的某一个元素，从后往前，兼容ie9+*/
 li:nth-last-child(1){
 	color: #f00;font-size:30px;
 }
-/*nth-of-type(n)，在同类元素中命中指定下标元素*/
+/*8、nth-of-type(n)，在同类元素中命中指定下标元素*/
 p:nth-of-type(5){
 	border: 1px #f00 solid;
 }
-/*选取父层内第一个元素兼容, IE7+*/
+/*9、选取父层内第一个元素兼容, IE7+*/
 ul li:first-child {
   color: #f00;
 }
