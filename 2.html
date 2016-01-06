@@ -39,7 +39,10 @@ p{width: 40px;}
 p::first-line{
 	color: #0f0;
 }
-
+/*nth-child(n) 用于选取 stack 中的某一个元素，兼容ie9+*/
+li:nth-child(2n){
+	font-weight: bold;
+}
 
 </style>
 
@@ -65,6 +68,18 @@ p::first-line{
 <p>测试文案4</p>
 <p>测试文案5</p>
 
+
+<ul>
+	<li>test1</li>
+	<li>test2</li>
+	<li>test3</li>
+	<li>test4</li>
+	<li>test5</li>
+	<li>test6</li>
+	<li>test7</li>
+	<li>test8</li>
+	<li>test9</li>
+</ul>
 
 </body>
 </html>
