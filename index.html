@@ -65,6 +65,15 @@ div[title='123']{
 div[title*='abc']{
 	color: #f00;
 }
+/*11、属性选择器，开头匹配，兼容ie7+*/
+a[href^="http"]{
+	color: #0f0;
+	font-weight: bold;
+}
+
+
+
+
 </style>
 
 <div class="box1" id="box1">
@@ -106,6 +115,12 @@ div[title*='abc']{
 <div title="12abc23">text</div>
 <div title="12ab1c23">text2</div>
 <div title="12ab1c2abc3">text3</div>
+
+<br>
+<br>
+<a href="http:www.baidu.com">test11</a>
+<a href="index.html">test22</a>
+
 
 </body>
 </html>
