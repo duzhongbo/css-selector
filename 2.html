@@ -12,7 +12,7 @@ p[data-info~="external"]{
 	color: #f00;
 	font-weight: bold;
 }
-
+/*加绒ie9*/
 input[type=radio]:checked{
 	border: 1px #f00 solid;
 }
@@ -21,6 +21,13 @@ a{text-decoration: none;}
 a:hover{
 	border-bottom: 1px #000 solid;
 	/*text-decoration: underline;*/
+}
+/*属性选择器，命中所有非指定属性的元素，兼容ie9*/
+div:not(#test){
+	color: #0f0;
+}
+div:not(.test2){
+	font-weight: bold;
 }
 
 </style>
@@ -33,6 +40,14 @@ a:hover{
 <input type="radio" name="sex">
 <input type="radio" name="sex">
 <input type="radio" name="sex">
+
+
+<div class="test">test1</div>
+<div class="test">test2</div>
+<div class="test" id="test">test3</div>
+<div class="test2">test4</div>
+<div class="test">test5</div>
+
 
 </body>
 </html>
