@@ -29,6 +29,11 @@ div:not(#test){
 div:not(.test2){
 	font-weight: bold;
 }
+/*选择快元素的首字母，兼容 IE6+*/
+p:first-letter{
+	font-size: 20px;
+	font-weight: bold;
+}
 
 </style>
 
@@ -47,6 +52,12 @@ div:not(.test2){
 <div class="test" id="test">test3</div>
 <div class="test2">test4</div>
 <div class="test">test5</div>
+
+<p>测试文案1</p>
+<p>测试文案2</p>
+<p>测试文案3</p>
+<p>测试文案4</p>
+<p>测试文案5</p>
 
 
 </body>
